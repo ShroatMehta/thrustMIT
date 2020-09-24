@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="icon" href="/images/black logo_.png" />
+    	<meta name="description" content="We are a  student project from MIT Manipal. We develop sounding rockets." />
+  		<meta name="keywords" content="Rocketry, thrustMIT, sounding rockets, Manipal, MIT, Manipal Institute of Technology" />
+		  <meta name="author" content="Shroat Mehta @thrustMIT" /> 
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+    </head>
+    <body>
+        
+        <div class="container demo-2">
+			<div class="codrops-top clearfix">
+				<a href="./index.html">
+					<img src="./images/website.svg" class="logo" alt="">
+				</a>
+                <div class="clr"></div>
+            </div>
+				
+						<div id="myNav" class="overlay">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<div class="overlay-content">
+								<a href="/index.html">Home</a>
+							  <a href="/subsystems.html">Subsystems</a>
+							  <a href="/index2.html">Projects</a>
+							  <a href="/team.html">Team</a>
+							  <a href="/partners.html">Partners</a>
+							  <a href="/gallery.html">Gallery</a>
+							  <a href="/contact.html">Contact</a>
+							</div>
+						  </div>
+						  <span  class="hamburger" onclick="openNav() ">&#9776;</span>
+				
+				
+				
+			
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<h2>OUR PROJECTS</h2>
+							<blockquote><p>We build sounding rockets for SpacePort America Cup. Our team has evolved and improved after each project of ours. Let's see what have we built. </p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<h2>LAPWING</h2>
+							<blockquote><p>Lapwing series was our first attempt at rocketry, it was used to test our initial ideas and prepare for our bigger launches.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<h2>VYOM</h2>
+							<blockquote><p>Vyom is the first sounding rocket build by thrustMIT.Weighing at 26 kgs, Vyom has a  apogee of 1.2 Km. The airframe is made up of Glass fibre and has Aluminium 6061 T6 bulkheads.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-4"></div>
+							<h2>ARYA</h2>
+							<blockquote><p>Arya is our second sounding rocket with a carbon fibre airframe, weighing at 24kgs with a height of 251 cm. With upgraded avionics, Arya has a payload capacity of 4kgs and an apogee of 3Km.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-5"></div>
+							<h2>PHOENIX</h2>
+							<blockquote><p>Pheonix is our first sounding rocket with a completely modular design. Pheonix sports carbon fibre airframe and fibreglass avionics bay to facilitate telemetry. It also has Exterior coating on the fuselage to improve outer surface finish and  better rocket aerodynamics.</p></blockquote>
+						</div>
+					</div>
+					
+				</div><!-- /sl-slider -->
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+			
+
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+	</body>
+</html>
