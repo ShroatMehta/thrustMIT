@@ -37,12 +37,14 @@
 .footer{
     margin: 0px ;
     padding: 20px 0px 0px 0px;
+    color: #ffffff;
 }
 .address{
     font-size: 100%;
     margin: 0px;
     padding: 10px;
     font-family: 'Raleway', sans-serif; 
+    
    
 }
 body{
@@ -54,21 +56,26 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .fa {
-    padding: 30px;
+    padding: 0;
     font-size: 40px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
+    margin-right: 30px;
+    padding-top: 20px;
+    
+  
     
     
   }
   .fa-phone {
-    padding: 30px;
+    padding: 0;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
+    padding-bottom: 20px;
     
   }
   .fa:hover {

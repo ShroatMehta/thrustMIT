@@ -49,6 +49,12 @@ a:link {
 	
 
 }
+.spaceport{
+	color: #000000!important;
+}
+.spaceport:hover{
+	color: #FF9933!important;
+}
 
 
 .demo-2 .bg-img {
@@ -71,18 +77,17 @@ a:link {
 
 /* Custom navigation arrows */
 
-/*.nav-arrows span {
+.nav-arrows span {
 	position: absolute;
 	z-index: 2000;
 	top: 50%;
-	width: 40px;
-	height: 40px;
-	border: 8px solid #FF9933;
-	border: 8px solid rgba(255, 153, 51, 0.6);
+	width: 35px;
+	height: 35px;
+	border: 6px solid #FF9933;
+	border: 6px solid rgba(255, 255, 255,1);
 	text-indent: -90000px;
 	margin-top: -40px;
 	cursor: pointer;
-	
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
@@ -91,7 +96,7 @@ a:link {
 }
 
 .nav-arrows span:hover {
-	border-color: rgba(255,153,51,1);
+	border-color: rgba(255,255,255,0.6);
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -178,16 +183,8 @@ a:link {
 	z-index: 1;
 	
 }
-.demo-1 .headmain {
-	width: 900px;
-	height: 247px;
-	position: absolute;
-	bottom: 40%;
-	left: 19.5%;
-	margin: 0 0 0 -130px;
-	z-index: 1;
-	
-	
+.demo-1 h2 img {
+	width: 80%;
 }
 .demo-1 .sl-slide h2 {
 	color: #000;
@@ -222,12 +219,19 @@ a:link {
 	margin: 0 0 -200px 0;
 	padding: 0;
 }
-
 .demo-1 .sl-slide blockquote p{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 500px;
 	position: relative;
+}
+.demo-1 .sl-slide blockquote .fa{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 50px;
+	position: relative;
+	color: #f0f0f0;
+	font-size: 35px;
 }
 
 .demo-1 .sl-slide blockquote p a{
@@ -253,13 +257,15 @@ a:link {
 	/*content: '\201c';*/
 }
 .demo-1 .sl-slide blockquote cite a {
-	font-size: 15px;
+	font-size: 18px;
 	padding-top: 10px;
 	display: inline-block;
 	font-style: normal;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	color: #FF9933;
+	font-style: bold;
+	text-shadow: 0.5px 0.5px #FF9933;
 }
 
 /* Custom background colors for slides in first demo */
@@ -289,16 +295,16 @@ a:link {
 	font-size: 30px;
 	bottom: 45%;
 	left: 2%;
+	font-family: 'Raleway', sans-serif;
 	color: #ffffff;
+	
 }
 
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	background-color: #ffffff;
+	background-color:#d9d9d9;
 background-image: url("../images/45-degree-fabric-dark.png");
-
-	
 }
 
 .demo-1 .bg-2 h2,
@@ -335,7 +341,7 @@ background-image: url("../images/45-degree-fabric-dark.png");
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background-color: #ffffff;
+	background-color:#A9A9A9;
 background-image: url("../images/45-degree-fabric-dark.png");
 
 
@@ -559,19 +565,36 @@ background-image: url("../images/45-degree-fabric-dark.png");
 		width: 130px;
 		height: 130px;
 		margin-left: -65px;
-		margin-bottom: 50px;
+		margin-bottom: 45px;
+		
+	}
+	.demo-1 .headmain {
+	width: 100%;
 	}
 
 	.demo-1 .sl-slide blockquote {
-		margin-bottom: -120px;
+		margin-bottom: -150px;
+		
+	}
+	.demo-1 .bg-1-main .citation  {
+		font-size: 25px;
+		
 		
 	}
 
 	.demo-1 .sl-slide h2 {
-		line-height: 22px;
-		font-size: 35px;
-		margin-bottom: -40px;
-		letter-spacing: 8px;
+		line-height: 28px;
+		font-size: 28px;
+		margin-bottom: -80px;
+		letter-spacing: 4px;
+		text-align: center!important;
+		
+	}
+
+	.demo-1 .sl-slide p {
+		padding: 5px;
+		font-size: 16px;
+		
 	}
 
 	.demo-1 .sl-slide blockquote p:before {
@@ -594,5 +617,25 @@ background-image: url("../images/45-degree-fabric-dark.png");
 	.demo-2 .sl-slider blockquote {
 		font-size: 24px;
 	}
+	.nav-arrows span{
+		width: 30px;
+		height: 30px;
+	}
 
+}
+@media screen and (min-width: 1920px) {
+
+	.demo-1 .headmain {
+		width: 1000px;
+		height: auto;
+		bottom: 40%;
+		left: 32%;
+		margin: 0 0 0 -120px;
+		z-index: 1;
+	}
+	.demo-1 .sl-slide p {
+		font-size: 20px;
+		
+	}
+	
 }
