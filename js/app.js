@@ -7,6 +7,8 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+
+
 function splitScroll(){
 const controller = new ScrollMagic.Controller();
 

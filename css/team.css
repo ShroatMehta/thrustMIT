@@ -131,13 +131,14 @@ background-image: url(../images/45-degree-fabric-dark.png);
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      margin-left: 19%;
+      margin-left: 16%;
       
   }
   .profiles-partners{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 16%;
     
 }
   .heading {
@@ -146,6 +147,7 @@ background-image: url(../images/45-degree-fabric-dark.png);
     text-align: center;
     padding: 5%;
     color: #FF9933;
+    margin-left: -9%;
   }
 
   .profile p {
@@ -179,6 +181,14 @@ background-image: url(../images/45-degree-fabric-dark.png);
     align-items: center;
     max-width: 100vw;
   }
+  .profile .profile-img-partners {
+    height: 180px;
+    width: 180px;
+      cursor: pointer;
+      transition: 400ms;
+      z-index: 50000;
+    }
+  
 
   
 

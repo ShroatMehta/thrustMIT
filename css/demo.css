@@ -93,6 +93,7 @@ a:link {
       padding: 5px;
     }
   }
+
   @media screen and (max-width: 600px) {
     .codrops-top img{
       margin-left: 15px!important;
@@ -106,6 +107,12 @@ body {
     font-size: 15px;
     color: #333;
     -webkit-font-smoothing: antialiased;
+}
+@keyframes fadeOut {
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
 }
 
 a {
@@ -266,10 +273,14 @@ padding-right: 0;
     line-height: 30px;
     border-bottom: 4px solid transparent;
 }
-.credits{
-  margin-top: 80px;
+
+.overlay .credits a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
   display: block;
-  color: lightgray;
-  opacity: 0.7;
+  transition: 0.3s;
+  margin-top: 80px !important;
 }
 

@@ -130,11 +130,28 @@ color: white;
 .vyom-desktop{
     display: none;
 }
-  h1{
-      font-size: 30px;
-  }
   .title{
       text-align: center;
+      
   }
+  .full-screen-video-container h1 {
+      font-size: 40px;
+  }
+  .about-pages .subscale p {
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+   
+}
+.about-pages .content-main ul{
+    width: 75%;
+    font-size: 20px;
+    line-height: 20px;
+    list-style-image: url(); 
+}
+h2{
+    line-height: 60px;
+    font-size: 40px;
+}
 }
 
