@@ -35,6 +35,9 @@
 .vyom-mobile{
     display: none;
 }
+.arya-mobile{
+    display: none;
+}
  h2{
     display: block;
     white-space: pre-line;
@@ -128,6 +131,12 @@ color: white;
     display: block;
 }
 .vyom-desktop{
+    display: none;
+}
+.arya-mobile{
+    display: block;
+}
+.arya-desktop{
     display: none;
 }
   .title{
