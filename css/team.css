@@ -29,13 +29,13 @@ background-image: url(../images/45-degree-fabric-dark.png);
 .heading {
   font-size: 40px;
   color:#FF9933;
-  text-align: center;
+//  text-align: center;
   padding: 10px;
 }
 .heading-1{
   font-size: 60px;
   color: white;
-  text-align: center;
+//  text-align: center;
   padding-top: 50px;
 }
 
