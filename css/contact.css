@@ -59,17 +59,13 @@ body{
 }
 .fa {
     padding: 0;
-    font-size: 40px;
-    width: 30px;
+    font-size: 30px;
+    width: 40px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     margin-right: 30px;
     padding-top: 20px;
-    
-  
-    
-    
   }
   .fa-phone {
     padding: 0;
@@ -77,26 +73,17 @@ body{
     width: 30px;
     text-align: center;
     text-decoration: none;
-    padding-bottom: 20px;
-    
   }
   .fa:hover {
     opacity: 0.7;
     text-decoration: none;
     color: #FF9933;
   }
-  
-
   .mail{
     color: white;
-    padding: 20px;
-    
   }
-
   .call i{
     color: white;
-    padding: 20px;
-
   }
   .heading{
     text-align: center;
