@@ -142,23 +142,23 @@ background-image: url(../images/45-degree-fabric-dark.png);
     
 }
   .heading {
-    font-size: 30px;
-    color: white;
+    font-size: 25px;
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: -10%;
     color: #FF9933;
-    margin-left: -9%;
   }
 
   .profile p {
     margin: 20px 10px 80px 10px;
   }
   .heading-1{
-    font-size: 35px;
+    font-size: 30px;
+    text-align: center;
     padding-top: 15%;
     padding-bottom: 5%;
-    margin-left: -9%;
-    
+    margin-left: -10%;
   }
 
   .user-name {
