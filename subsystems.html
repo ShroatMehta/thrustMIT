@@ -150,6 +150,11 @@
 						init = function() {
 
 							initEvents();
+							// Nav dots are intrusive while reading the slides
+							// Fade them out after 1.75 seconds
+							// Reference
+							// https://stackoverflow.com/questions/683363/jquery-autohide-element-after-5-seconds
+							$('#nav-dots').delay('1750').fadeOut('medium');
 							
 						},
 						initEvents = function() {
@@ -157,14 +162,18 @@
 							// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
 
+								$('#nav-dots').delay('750').fadeIn('slow');
 								slitslider.next();
+								$('#nav-dots').delay('1000').fadeOut('medium');
 								return false;
 
 							} );
 
 							$navArrows.children( ':first' ).on( 'click', function() {
 								
+								$('#nav-dots').delay('750').fadeIn('slow');
 								slitslider.previous();
+								$('#nav-dots').delay('1000').fadeOut('medium');
 								return false;
 
 							} );
