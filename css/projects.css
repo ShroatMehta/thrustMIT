@@ -18,6 +18,7 @@
 .about{
     height: 300vh;
     display: flex;
+	overflow-y: hidden;
 }
 .about-title {
     width: 30%;
