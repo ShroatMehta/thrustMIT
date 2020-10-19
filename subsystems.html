@@ -146,6 +146,25 @@
 
 							}
 						} ),
+                        NavDotInF,
+                        NavDotOutF,
+                        NavDotInB,
+                        NavDotOutB,
+
+                        NavDotsFadeIn = function() {
+							$('#nav-dots').fadeIn('slow');
+                        }
+
+						NavDotsFadeOut = function() {
+							$('#nav-dots').fadeOut('medium');
+						}
+
+						NavDotsAnimClear = function() {
+							clearTimeout(NavDotInB);
+							clearTimeout(NavDotOutB);
+							clearTimeout(NavDotInF);
+							clearTimeout(NavDotOutF);
+						}
 
 						init = function() {
 
@@ -154,7 +173,7 @@
 							// Fade them out after 1.75 seconds
 							// Reference
 							// https://stackoverflow.com/questions/683363/jquery-autohide-element-after-5-seconds
-							$('#nav-dots').delay('1750').fadeOut('medium');
+							NavDotOutF = setTimeout(NavDotsFadeOut, 1750);
 							
 						},
 						initEvents = function() {
@@ -162,18 +181,20 @@
 							// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
 
-								$('#nav-dots').delay('750').fadeIn('slow');
+								NavDotsAnimClear();
+								NavDotInF = setTimeout(NavDotsFadeIn, 500);
 								slitslider.next();
-								$('#nav-dots').delay('1000').fadeOut('medium');
+								NavDotOutF = setTimeout(NavDotsFadeOut, 2000);
 								return false;
 
 							} );
 
 							$navArrows.children( ':first' ).on( 'click', function() {
 								
-								$('#nav-dots').delay('750').fadeIn('slow');
+								NavDotsAnimClear();
+								NavDotInB = setTimeout(NavDotsFadeIn, 500);
 								slitslider.previous();
-								$('#nav-dots').delay('1000').fadeOut('medium');
+								NavDotOutB = setTimeout(NavDotsFadeOut, 2000);
 								return false;
 
 							} );
