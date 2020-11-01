@@ -19,11 +19,9 @@ a:link {
 }
 
 .spaceport{
-	color: #000000!important;
-}
-.spaceport:hover{
 	color: #FF9933!important;
 }
+
 /* Custom navigation arrows */
 
 .nav-arrows span {
@@ -214,7 +212,7 @@ a:link {
 	letter-spacing: 4px;
 	color: #FF9933;
 	font-style: bold;
-	text-shadow: 0.5px 0.5px #FF9933;
+	text-shadow: 0px 0px 0.5px #000000;
 }
 
 /* Custom background colors for slides in first demo */
@@ -252,7 +250,7 @@ a:link {
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	background-color:#d9d9d9;
+	background-color:#FFFFFF;
 background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 }
 
@@ -290,7 +288,7 @@ background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-d
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background-color:#A9A9A9;
+	background-color:#FFFFFF;
 background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 
 
@@ -333,7 +331,7 @@ background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-d
 /* Sixth Slide */
 .demo-1 .bg-6 .sl-slide-inner,
 .demo-1 .bg-6 .sl-content-slice {
-	background-color: #ffffff;
+	background-color:#FFFFFF;
 background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 }
 

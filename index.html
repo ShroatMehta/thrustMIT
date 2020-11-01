@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>thrustMIT</title>
 		<link rel="icon" href="https://ik.imagekit.io/wns4q4r9n2/misc/black_logo__xHFqm2z7I.png" />
 		<link rel="apple-touch-icon" href="https://ik.imagekit.io/wns4q4r9n2/misc/black_logo__xHFqm2z7I.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="We are student run rocketry team in MIT Manipal. We build high power sounding rockets for Spaceport America Cup" />
-        <meta name="keywords" content="Rocketry, thrustMIT, sounding rockets, Manipal, MIT, Manipal Institute of Technology" />
-        <meta name="author" content="Shroat Mehta @thrustMIT" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="We are student run rocketry team in MIT Manipal. We build high power sounding rockets for Spaceport America Cup" />
+		<meta name="keywords" content="Rocketry, thrustMIT, sounding rockets, Manipal, MIT, Manipal Institute of Technology" />
+		<meta name="author" content="Shroat Mehta @thrustMIT" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
 		</noscript>
-    </head>
-    <body>
+	</head>
+	<body>
 
-		
-        
-        <div class="container demo-1">
-			
-			  
-			  
+
+
+		<div class="container demo-1">
+
+
+
 			<div id="myNav" class="overlay">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="overlay-content">
@@ -47,7 +47,7 @@
 			  <span  class="hamburger" onclick="openNav()" >&#9776;</span>            
 			
 
-            <div id="slider" class="sl-slider-wrapper">
+			<div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
 				
@@ -86,7 +86,10 @@
 						<div class="sl-slide-inner">
 							<img src="https://ik.imagekit.io/wns4q4r9n2/Icons/about_Z2zUcANFS.png" class="deco" alt="">
 							<h2>ABOUT US</h2>
-							<blockquote><p>thrustMIT started off in early 2016 as a group of rocket enthusiasts with the aim of promoting High-Power-Rocketry in India.The team takes part in the <a href="https://spaceportamerica.com/" target="_blank" class="spaceport"> Spaceport America Cup</a>, which  is the biggest platform in the world for students to showcase their rocketry skills.</p></blockquote>
+							<blockquote><p>
+							thrustMIT started in early 2016 as a group of rocket enthusiasts to promote High-Power Rocketry in India. The team takes part in the Spaceport America Cup, which is the biggest platform in the world for students to showcase their rocketry skills.</p><cite>
+								<a href="https://spaceportamerica.com/" target="_blank">Check out Spaceport America!</a>
+							</cite></blockquote>
 						</div>
 					</div>
 					
@@ -171,8 +174,8 @@
 
 			</div><!-- /slider-wrapper -->
 
-        </div>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="./js/jquery.slitslider.js"></script>
 		<script type="text/javascript" src="./js/app.js"></script>
@@ -192,10 +195,34 @@
 
 							}
 						} ),
+						NavDotInF,
+						NavDotOutF,
+						NavDotInB,
+						NavDotOutB,
+
+						NavDotsFadeIn = function() {
+							$('#nav-dots').fadeIn('slow');
+						}
+
+						NavDotsFadeOut = function() {
+							$('#nav-dots').fadeOut('medium');
+						}
+
+						NavDotsAnimClear = function() {
+							clearTimeout(NavDotInB);
+							clearTimeout(NavDotOutB);
+							clearTimeout(NavDotInF);
+							clearTimeout(NavDotOutF);
+						}
 
 						init = function() {
 
 							initEvents();
+							// Nav dots are intrusive while reading the slides
+							// Fade them out after 1.75 seconds
+							// Reference
+							// https://stackoverflow.com/questions/683363/jquery-autohide-element-after-5-seconds
+							NavDotOutF = setTimeout(NavDotsFadeOut, 1750);
 							
 						},
 						initEvents = function() {
@@ -203,14 +230,20 @@
 							// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
 
+								NavDotsAnimClear();
+								NavDotInF = setTimeout(NavDotsFadeIn, 500);
 								slitslider.next();
+								NavDotOutF = setTimeout(NavDotsFadeOut, 2000);
 								return false;
 
 							} );
 
 							$navArrows.children( ':first' ).on( 'click', function() {
 								
+								NavDotsAnimClear();
+								NavDotInB = setTimeout(NavDotsFadeIn, 500);
 								slitslider.previous();
+								NavDotOutB = setTimeout(NavDotsFadeOut, 2000);
 								return false;
 
 							} );

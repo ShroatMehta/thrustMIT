@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: 'raleway', sans-serif;
-    
+    overflow-x: hidden;
+
 }
 .full-screen-video-container h1{
     color: #ffffff;
@@ -17,6 +18,7 @@
 .about{
     height: 300vh;
     display: flex;
+	overflow-y: hidden;
 }
 .about-title {
     width: 30%;
@@ -83,20 +85,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+	overflow-y: hidden;
 }
 .about-pages .content-main ul{
     width: 75%;
     font-size: 30px;
     line-height: 30px;
-    list-style-image: url(); 
-    
-   
-    
+    list-style-image: url();
 }
 .about-pages .content-photo img{
     max-width:100%;
     height: 100%; 
-   
 }
 .about-pages .content-main img{
     display: flex;
@@ -104,7 +103,6 @@
     align-items: center;
     max-width:50%;
     max-height: 50%;
-   
 }
 .about-pages .subscale p {
     width: 80%;
@@ -112,15 +110,35 @@
     line-height: 30px;
    
 }
+.about-pages .specs table, th, tr {
+	width: 32%;
+	height: 40px;
+//	border: 10px solid black;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: center;
+}
+.about-pages .specs td {
+	width: 32%;
+	height: 40px;
+//	border: 10px solid black;
+	font-size: 25px;
+	font-style: bold;
+	text-align: right;
+	vertical-align: center;
+}
+
 .about-pages div:nth-child(1){
-    background-color:#d9d9d9;
+    background-color:#EEEEEE;
 background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 }
 .about-pages div:nth-child(2){
-    background-color:transparent;
+    background-color: #777777;
+background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 }
 .about-pages div:nth-child(3){
-    background-color: #000000;
+    background-color: #222222;
 background-image: url("https://ik.imagekit.io/wns4q4r9n2/misc/45-degree-fabric-dark_62MIPvoPq.png");
 color: white;
 }
@@ -162,5 +180,25 @@ h2{
     line-height: 60px;
     font-size: 40px;
 }
+
+.about-pages .specs table, th, tr {
+	width: 32%;
+	height: 45px;
+//	border: 10px solid black;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: center;
+}
+.about-pages .specs td {
+	width: 32%;
+	height: 45px;
+//	border: 10px solid black;
+	font-size: 16px;
+	font-style: bold;
+	text-align: right;
+	vertical-align: center;
+}
+
 }
 
